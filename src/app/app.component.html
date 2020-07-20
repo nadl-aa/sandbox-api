@@ -23,7 +23,7 @@ view of their financial information.
 
 </div>
 <div class="about">
-  User Identification
+  User Authentication
 </div>
 
 <div class="pre">
@@ -35,7 +35,7 @@ view of their financial information.
   </pre>
 </div>
 <div class="about">
-  Sandbox Details for API calls
+  Sandbox Details for API Calls
 </div>
 <div class="pre">
   <pre class="in"> 
@@ -66,7 +66,7 @@ x-jws-signature that FIU will set in the API when calling AA.
 <b>x-jws-signature</b> - The HTTP header that contains the 'detached' signature of the body. API 
 request/response needs to be signed and the signature to be set in this header
 </div>
-<b>API Calls</b> 
+<b>API Calls Supported</b> 
 <div class="cus">
   <b>Customer Journey</b>
   <table class="customer">
@@ -135,8 +135,7 @@ request/response needs to be signed and the signature to be set in this header
               <td>GET/FI/fetch/{{ '{' }}sessionId{{ '}' }}</td>
               </tr>
   </table>      
-Following APIs can be used to connect to our Sandbox (We are following version 1.1.3 of 
-ReBIT specs as decided by Sahamati) 
+Following APIs can be used by the FIUs to connect to our Sandbox 
 <div class="desc">
 1. <b>POST/Consent</b> : This API is intended for AA Client/ FIU to request generation of digitally 
     signed consent artefacts. The customer has to use the AA application to select accounts and 
@@ -144,8 +143,8 @@ ReBIT specs as decided by Sahamati)
     application, AA generates the digitally signed consent artefacts. Note - The AA Client/ FIU 
     never sees the account of the customer or directly participates in consent generation.
 <div class="desc">
-2. <b>GET/Consent/handle/{{ '{' }}consentHandle{{ '}' }}</b> : This API is intended for checking the status of a 
-     previously submitted Consent Artefacts creation request.
+2. <b>GET/Consent/handle/{{ '{' }}consentHandle{{ '}' }}</b> : This API is intended for checking the status 
+     of a previously submitted Consent Artefacts creation request.
 </div>
 <div class="desc">
 3. <b>GET/Consent/{{ '{' }}id{{ '}' }}</b> : This API is intended for fetching the information associated with the 
