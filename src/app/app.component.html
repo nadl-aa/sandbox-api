@@ -1,6 +1,6 @@
 <mat-card class="card">
   <img src="assets/nadl.svg">
-  <span class="sand">NADL Sandbox Documentation</span>
+  <span class="sand">NADL Sandbox Integration</span>
   </mat-card>
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center; padding: 20px;">
@@ -20,7 +20,7 @@ an Account Aggregator duly retrieving, collecting, consolidating, organizing and
 financial information pertaining to customers, whereby customers would benefit from single 
 view of their financial information.
   </pre>
-
+  <pre class="in">Following are the steps for an FIU to integrate with the NADL AA Sandbox</pre>
 </div>
 <div class="about">
   User Authentication
@@ -28,10 +28,9 @@ view of their financial information.
 
 <div class="pre">
   <pre class="in"> 
-    <b>Virtual User Address</b> - Each user who has an account with the AA is identified by the unique 
-    Virtual User Address of the form “account@AA_identifier” form.
-    <b>Password</b> - It is the login password of end customer registered with NADL.
-    Note: Additionally, a 6-digit pin can be setup for the mobile application.
+<b>Virtual User Address</b> - Each user who has an account with the AA is identified by the unique 
+Virtual User Address of the form “account@AA_identifier”.
+<b>Password</b> - It is the login password of end customer registered with NADL.
   </pre>
 </div>
 <div class="about">
@@ -39,17 +38,13 @@ view of their financial information.
 </div>
 <div class="pre">
   <pre class="in"> 
-    In order to connect with our Sandbox and make use of the APIs, you need to whitelist our 
-    Sandbox credentials in your network and we need to do the same for your credentials.
-    You can send us your credentials via email.
+In order to connect with our Sandbox and make use of the APIs, you need to whitelist our 
+Sandbox credentials in your network and we need to do the same for your credentials.
+You can send us your credentials via email.
     <br>
-    <b>Base URL</b>
-
-    <a href="https://consumer-web-sb-cluster.nadl.co.in/authentication">https://consumer-web-sb-cluster.nadl.co.in/authentication</a>
-    <br>
-    <b>Prerequisites for making API calls with the Sandbox</b>   
+    <b>Prerequisites for making API calls to the Sandbox</b>   
     <pre class="p">
-Below are some of the keys needed to make successful API calls with our Sandbox. For further
+Below are some of the keys needed to make successful API calls to our Sandbox. For further
 information contact us on support@nadl.co.in
 <div class="aa">
 <b>aa_api_key</b> - The HTTP header that needs to be set when an AA calls the FIP or FIU API. 
@@ -108,6 +103,8 @@ request/response needs to be signed and the signature to be set in this header
                     </tr>
            
   </table>
+  <pre class="ins">The above functionalities are available for a customer from our customer portal or mobile app 
+(Android). For details please connect with NADL support at “support@nadl.co.in” </pre>
   <b>FIU Journey</b>
   <table class="customer">
     <tr>
@@ -135,7 +132,8 @@ request/response needs to be signed and the signature to be set in this header
               <td>GET/FI/fetch/{{ '{' }}sessionId{{ '}' }}</td>
               </tr>
   </table>      
-Following APIs can be used by the FIUs to connect to our Sandbox 
+  <pre class="ins">The FIU Journey APIs given above  can be used by the FIUs to connect to our Sandbox. 
+Details of these APIs are as follows: </pre>
 <div class="desc">
 1. <b>POST/Consent</b> : This API is intended for AA Client/ FIU to request generation of digitally 
     signed consent artefacts. The customer has to use the AA application to select accounts and 
@@ -175,7 +173,7 @@ Following APIs can be used by the FIUs to connect to our Sandbox
 </div></pre>
 <div class="support">
 <b>Support</b>
-<pre class="qu">  If you have any questions, please feel free to contact us at support@nadl.co.in</pre>
+If you have any questions, please feel free to contact us at support@nadl.co.in
 </div>
 </pre>
 </div>
