@@ -8,7 +8,8 @@ import {
   MatDatepickerModule,
   MatNativeDateModule,
   MatSelectModule,
-  MatSidenavModule
+  MatSidenavModule,
+  MatGridListModule
 } from '@angular/material';
 import { AppComponent } from './app.component';
 import { ConfirmEqualValidatorDirective } from './confirm-equal-validator.directive';
@@ -24,6 +25,7 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     HttpClientModule,
     MatCardModule,
     MatSidenavModule,
+    MatGridListModule,
     BrowserAnimationsModule
   ],
   providers: [],

@@ -11,21 +11,22 @@ text-align: center;
     text-decoration: darkslateblue;
     font-weight: bold;
     font-size: x-large;
-    padding-left: 70px;
+    padding-left: 4%;
 }
 .about
 {
-    padding-left: 330px;
+    padding-left: 20%;
     font-weight: bold;
     font-size: large;
     padding-top: 30px;
 }
 .in
 {
-    padding-left: 330px; 
+    padding-left: 20%; 
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:0.5cm;
+    white-space: initial;
 }
 .qu
 {
@@ -34,41 +35,54 @@ text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:0.5cm;
     padding-top: 5px;
+    white-space: initial;
 }
 .p{
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:0.5cm;
-    padding-left:2px;
+    padding-left:0.1%;
+    white-space: initial;
+}
+.main{
+    width: 77%;
 }
 .customer{
     border-collapse: collapse;
-    padding-top: 0px;
+    margin: 6 auto;
+    width: 96%;
 }
 th,td{
     border: 1px solid #ddd;
-    padding: 8px;
+    padding: 10px;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 .desc
 {
     padding-top: 1px;
+    white-space: initial;
+    word-break: break-word;
 }
 .support
 {
-    padding-top: 1px;
+    padding-top: 2px;
+    padding-left: 2px;
 }
 .c
 {
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:0.5cm;
-    margin-top: 1px;
+    white-space: initial;
 }
 .int
 {
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:0.5cm;
+    white-space: initial;
+    padding-left: 0.1%;
 }
 .cards
 {
@@ -83,19 +97,21 @@ th,td{
 .card{
     position: fixed;
     width: 100%;
+    white-space: initial;
 }
 .sands
 {
     color: floralwhite;
-    padding-left: 30px;
+    padding-left: 2px;
 }
 .ins{
-    padding-left: 6px; 
+    padding-left: 0.01%; 
     font-style: normal;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size:0.5cm;
+    white-space: initial;
 }
-.cus
-{
-    padding-top: 0.01px;
+.cardDiv{
+    display: flex;
+    word-break: break-word;
 }
